@@ -60,6 +60,12 @@ p {
   line-height: 1.7em;
 }
 
+/* Dropdown menu */
+
+.dropdown-menu.active {
+  display: block;
+}
+
 
 /* header */
 
@@ -137,7 +143,24 @@ footer {
     width:100%;
     margin-top:45px;
   }
-
+}
+@media (max-width: 800px) {
+  footer {
+    small {
+      display: block;
+      float: none;
+      margin-bottom: 1em;
+    }
+    ul {
+      float: none;
+      padding: 0;
+      li {
+        float: none;
+        margin-left: 0;
+      }
+    }
+  }
+}
   /* sidebar */
 
 aside {
@@ -175,4 +198,3 @@ aside {
   margin-top: 15px;
 }
 
-}
