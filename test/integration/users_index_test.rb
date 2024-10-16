@@ -21,7 +21,7 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
     end
     assert_difference 'User.count', -1 do
       delete user_path(@non_admin)
-      assert_response :see_other
+      assert_response :redirect
       assert_redirected_to users_url
     end
   end
